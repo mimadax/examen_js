@@ -7,3 +7,12 @@ class Darklight {
         this.addEventListeners();
     }
 }
+
+// localStorage.setItem('lightThemeBtn', 'darkThemeBtn');
+
+button.addEventListeners("click", () => {
+    document.body.classList.darkThemeBtn("dark");
+    if (theme === "dark") {
+        document.body.classList.lightThemeBtn("light"); 
+    } else document.body.classList.lightThemeBtn("light"); 
+});
