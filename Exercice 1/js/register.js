@@ -37,10 +37,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 body: JSON.stringify({ username, password }),
             });
   
+//////// A PARTIR D ICI : Je n'ai pas reussi à faire afficher mes codes + textes  ////////////
+/// AUSSI Ligne 13 à 23, j'ai pas reussi à l'intégérer a ce code sans faire tout planter  /// 
+
             if (res.status === 201) {
                 errorDiv.innerText = "Inscription réussie !";
                 errorDiv.classList.remove("hidden");
-                errorDiv.style.color = "green"; // Mettre le message en vert
+                errorDiv.style.color = "green"; 
+
             } else if (res.status >= 400) {
                 errorDiv.innerText = "Erreur lors de l'inscription. Veuillez vérifier vos informations.";
                 errorDiv.classList.remove("hidden");
